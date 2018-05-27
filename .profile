@@ -1,4 +1,4 @@
-export EDITOR='/usr/bin/nano';
+export EDITOR='/usr/bin/vim';
 
 # pidof polyfill for OSX
 function pidof() {
