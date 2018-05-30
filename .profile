@@ -23,3 +23,6 @@ function edit() {
 # write history to .bash_history immediately
 shopt -s histappend;
 PROMPT_COMMAND='history -a;history -n';
+
+# redirect vim, cuz it sucks
+alias vim="nano";
