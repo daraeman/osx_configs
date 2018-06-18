@@ -26,3 +26,6 @@ PROMPT_COMMAND='history -a;history -n';
 
 # redirect vim, cuz it sucks
 alias vim="nano";
+
+# copy files/dirs and delete the originals
+alias move="rsync -vhr --progress --remove-source-files"
