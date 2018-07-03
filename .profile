@@ -29,3 +29,8 @@ alias vim="nano";
 
 # copy files/dirs and delete the originals
 alias move="rsync -vhr --progress --remove-source-files"
+
+# find process(es) bound to port
+function bound() {
+	lsof -nP -i4TCP:$1 | grep LISTEN
+}
